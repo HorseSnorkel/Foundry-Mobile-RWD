@@ -1,0 +1,18 @@
+{
+  "mobile-rwd": {
+    "settings": {
+      "hideMap": {
+        "name": "Hide Map on Mobile",
+        "hint": "Hide the canvas/map area on mobile and tablet devices to prioritize UI elements like character sheets and chat."
+      },
+      "compactChat": {
+        "name": "Compact Chat Messages",
+        "hint": "Use a more compact layout for chat messages on mobile and tablet devices to improve readability."
+      },
+      "mobileHotbar": {
+        "name": "Mobile-Optimized Hotbar",
+        "hint": "Enable a touch-friendly hotbar optimized for mobile and tablet devices."
+      }
+    }
+  }
+}

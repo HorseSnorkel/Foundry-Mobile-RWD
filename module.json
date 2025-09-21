@@ -1,0 +1,41 @@
+{
+  "id": "foundry-mobile-rwd",
+  "title": "Foundry Mobile RWD",
+  "description": "Responsive web design module for FoundryVTT optimized for mobile and tablet devices, prioritizing character sheets and chat functionality.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "HorseSnorkel",
+      "discord": "horsesnorkel"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "esmodules": [
+    "scripts/mobile-rwd.js"
+  ],
+  "styles": [
+    "styles/mobile-rwd.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "https://github.com/HorseSnorkel/Foundry-Mobile-RWD",
+  "manifest": "https://github.com/HorseSnorkel/Foundry-Mobile-RWD/releases/latest/download/module.json",
+  "download": "https://github.com/HorseSnorkel/Foundry-Mobile-RWD/releases/latest/download/module.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "media": [
+    {
+      "type": "icon",
+      "url": "assets/icon.png"
+    }
+  ]
+}
