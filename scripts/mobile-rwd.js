@@ -196,6 +196,17 @@ class MobileRWD {
     handleHotbar(hotbar, html, data) {
         if ((this.isMobile || this.isTablet) && game.settings.get(MobileRWD.MODULE_ID, 'mobileHotbar')) {
             html.addClass('mobile-hotbar');
+            
+            // Ensure hotbar is positioned correctly for mobile
+            if (this.isMobile) {
+                html.css({
+                    'position': 'fixed',
+                    'bottom': '70px',
+                    'left': '0',
+                    'right': '0',
+                    'z-index': '999'
+                });
+            }
         }
     }
 
@@ -203,26 +214,38 @@ class MobileRWD {
      * Toggle map visibility
      */
     toggleMapVisibility(show) {
-        const canvas = document.getElementById('board');
-        if (canvas) {
-            canvas.style.display = show ? 'block' : 'none';
+        try {
+            const canvas = document.getElementById('board');
+            if (canvas) {
+                canvas.style.display = show ? 'block' : 'none';
+            }
+            
+            document.body.classList.toggle('hide-map', !show);
+        } catch (error) {
+            console.warn(`${MobileRWD.MODULE_ID} | Error toggling map visibility:`, error);
         }
-        
-        document.body.classList.toggle('hide-map', !show);
     }
 
     /**
      * Toggle compact chat mode
      */
     toggleCompactChat(compact) {
-        document.body.classList.toggle('compact-chat', compact);
+        try {
+            document.body.classList.toggle('compact-chat', compact);
+        } catch (error) {
+            console.warn(`${MobileRWD.MODULE_ID} | Error toggling compact chat:`, error);
+        }
     }
 
     /**
      * Toggle mobile hotbar
      */
     toggleMobileHotbar(enabled) {
-        document.body.classList.toggle('mobile-hotbar-enabled', enabled);
+        try {
+            document.body.classList.toggle('mobile-hotbar-enabled', enabled);
+        } catch (error) {
+            console.warn(`${MobileRWD.MODULE_ID} | Error toggling mobile hotbar:`, error);
+        }
     }
 
     /**
