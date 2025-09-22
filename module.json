@@ -28,7 +28,7 @@
     }
   ],
   "url": "https://github.com/HorseSnorkel/Foundry-Mobile-RWD",
-  "manifest": "https://github.com/HorseSnorkel/Foundry-Mobile-RWD/releases/latest/download/module.json",
+  "manifest": "https://raw.githubusercontent.com/HorseSnorkel/foundry-mobile-rwd/main/module.json",
   "download": "https://github.com/HorseSnorkel/Foundry-Mobile-RWD/releases/latest/download/module.zip",
   "license": "LICENSE",
   "readme": "README.md",
